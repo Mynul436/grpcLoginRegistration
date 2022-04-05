@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Lae+pEz3c0xxzK5qCgq7M/jbARm2FPkSLkRO+146so4=",
+  "Source": "grpc_db_ops",
+  "BasePath": "_content/grpc_db_ops",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
