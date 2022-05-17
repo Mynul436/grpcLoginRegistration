@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "Lae+pEz3c0xxzK5qCgq7M/jbARm2FPkSLkRO+146so4=",
-  "Source": "grpc_db_ops",
-  "BasePath": "_content/grpc_db_ops",
+  "Hash": "14sYF15klc1b1T3/4P6+NmXhk9Z6Ai36H1Oap+cY184=",
+  "Source": "GrpcServer",
+  "BasePath": "_content/GrpcServer",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

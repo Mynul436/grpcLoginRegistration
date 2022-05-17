@@ -7,7 +7,7 @@
 
 using grpc = global::Grpc.Core;
 
-namespace grpc_db_ops {
+namespace GrpcServer {
   /// <summary>
   /// The greeting service definition.
   /// </summary>
@@ -49,12 +49,12 @@ namespace grpc_db_ops {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::grpc_db_ops.HelloRequest> __Marshaller_greet_HelloRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::grpc_db_ops.HelloRequest.Parser));
+    static readonly grpc::Marshaller<global::GrpcServer.HelloRequest> __Marshaller_greet_HelloRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GrpcServer.HelloRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::grpc_db_ops.HelloReply> __Marshaller_greet_HelloReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::grpc_db_ops.HelloReply.Parser));
+    static readonly grpc::Marshaller<global::GrpcServer.HelloReply> __Marshaller_greet_HelloReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GrpcServer.HelloReply.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::grpc_db_ops.HelloRequest, global::grpc_db_ops.HelloReply> __Method_SayHello = new grpc::Method<global::grpc_db_ops.HelloRequest, global::grpc_db_ops.HelloReply>(
+    static readonly grpc::Method<global::GrpcServer.HelloRequest, global::GrpcServer.HelloReply> __Method_SayHello = new grpc::Method<global::GrpcServer.HelloRequest, global::GrpcServer.HelloReply>(
         grpc::MethodType.Unary,
         __ServiceName,
         "SayHello",
@@ -64,7 +64,7 @@ namespace grpc_db_ops {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::grpc_db_ops.GreetReflection.Descriptor.Services[0]; }
+      get { return global::GrpcServer.GreetReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of Greeter</summary>
@@ -78,7 +78,7 @@ namespace grpc_db_ops {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::grpc_db_ops.HelloReply> SayHello(global::grpc_db_ops.HelloRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::GrpcServer.HelloReply> SayHello(global::GrpcServer.HelloRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -101,7 +101,7 @@ namespace grpc_db_ops {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, GreeterBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_SayHello, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::grpc_db_ops.HelloRequest, global::grpc_db_ops.HelloReply>(serviceImpl.SayHello));
+      serviceBinder.AddMethod(__Method_SayHello, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GrpcServer.HelloRequest, global::GrpcServer.HelloReply>(serviceImpl.SayHello));
     }
 
   }

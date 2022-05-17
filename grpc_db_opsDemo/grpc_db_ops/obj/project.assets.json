@@ -2293,9 +2293,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Dev Skill\\grpcLoginRegistration\\grpc_db_opsDemo\\grpc_db_ops\\grpc_db_ops.csproj",
-      "projectName": "grpc_db_ops",
-      "projectPath": "E:\\Dev Skill\\grpcLoginRegistration\\grpc_db_opsDemo\\grpc_db_ops\\grpc_db_ops.csproj",
+      "projectUniqueName": "E:\\Dev Skill\\grpcLoginRegistration\\grpc_db_opsDemo\\grpc_db_ops\\GrpcServer.csproj",
+      "projectName": "GrpcServer",
+      "projectPath": "E:\\Dev Skill\\grpcLoginRegistration\\grpc_db_opsDemo\\grpc_db_ops\\GrpcServer.csproj",
       "packagesPath": "C:\\Users\\Mynul\\.nuget\\packages\\",
       "outputPath": "E:\\Dev Skill\\grpcLoginRegistration\\grpc_db_opsDemo\\grpc_db_ops\\obj\\",
       "projectStyle": "PackageReference",

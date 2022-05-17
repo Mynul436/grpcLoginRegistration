@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServer";
+
+service Student{
+	rpc UserReg(StudentRegistration) returns (UserDtoModel);
+	rpc UserLog(StudentLogin) returns (UserDtoModel);
+	
+}
+message StudentRegistration{
+	 string FirstName=1;
+     string LastName=2 ;
+     string UserName=3;
+     string Email=4;
+     string Password=5;
+}
+message StudentLogin{
+	string email=1;
+	string password=2;
+}
+message UserDtoModel{
+	string data=1;
+	bool isSuccessful=2;
+	string message=3;
+
+}

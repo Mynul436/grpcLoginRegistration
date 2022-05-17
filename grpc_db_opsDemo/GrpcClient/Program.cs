@@ -1,2 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+using Grpc.Net.Client;
+using GrpcClient;
+using GrpcServer;
+
+var channel = GrpcChannel.ForAddress("https://localhost:7024/");
+var client = new GrpcClient.Greeter.GreeterClient(channel);
+Console.ReadLine();

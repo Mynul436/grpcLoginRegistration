@@ -1,5 +1,6 @@
 using Grpc.Core;
 using grpc_db_ops;
+using GrpcServer;
 
 namespace grpc_db_ops.Services
 {
